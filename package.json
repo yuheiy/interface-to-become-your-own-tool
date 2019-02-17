@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "start": "npm-run-all slide -p start:*",
+    "start": "rm -rf docs && npm-run-all slide -p start:*",
     "start:eleventy": "eleventy --serve",
     "start:slide": "chokidar 'slides.sketch' -c 'npm run slide && touch _data/slides.js'",
-    "prebuild": "npm run slide",
+    "prebuild": "rm -rf docs && npm run slide",
     "build": "eleventy",
     "preslide": "rm -rf slides/",
     "slide": "/Applications/Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export artboards slides.sketch --output=slides/"
