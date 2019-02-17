@@ -1,0 +1,22 @@
+---
+permalink: "{{ page.fileSlug }}.html"
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="slideshow.css">
+    <script type="module" src="slideshow.mjs"></script>
+  </head>
+  <body>
+    <ol id="slides">
+      {% for slide in slides %}
+      <li>
+        <img src="{{ slide.image.src }}" alt="{{ slide.image.alt }}">
+      </li>
+      {% endfor %}
+    </ol>
+  </body>
+</html>

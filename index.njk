@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ユーザー自身の道具になるためのインターフェイス</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ユーザー自身の道具になるためのインターフェイス</h1>
+      <p>インターフェイスの操作がユーザー主体でなく、提供側主導になってしまうということについて考えます。</p>
+    </header>
+
+    <slideshow-controller slideCount="{{ slides.length }}"></slideshow-controller>
+
+    <ol id="slides" aria-label="スライド">
+      {% for slide in slides %}
+      <li id="{{ slide.id }}">
+        <img src="{{ slide.image.src }}" alt="{{ slide.image.alt }}">
+        {% if slide.lines.length %}
+          <ul>
+            {% for line in slide.lines %}
+            <li id="{{ slide.id }}:{{ loop.index }}"><span>{{ line | safe }}</span></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+
+    <p id="finished" hidden>スライドの終端</p>
+  </body>
+</html>
