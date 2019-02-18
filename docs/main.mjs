@@ -20,7 +20,7 @@ const highlightCurrentSlide = (index) => {
   slideItemElements[index].setAttribute('aria-current', 'true')
 
   // スライド部分のliが可視領域に入ってない場合のみ
-  if (true) {
+  if (!true) {
     slideItemElements[index].scrollIntoView({
       behavior: 'smooth',
       block: 'nearest',
