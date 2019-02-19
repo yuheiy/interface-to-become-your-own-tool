@@ -1,71 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ユーザー自身の道具になるためのインターフェイス</title>
     <link rel="stylesheet" href="main.css">
-    <script type="module" src="main.mjs"></script>
+    
   </head>
   <body>
     <header>
       <h1>ユーザー自身の道具になるためのインターフェイス</h1>
       <p>インターフェイスの操作がユーザー主体でなく、提供側主導になってしまうということについて考えます。</p>
+      <p>（<time datetime="2019-02-18">2019年2月18日</time>発表）</p>
     </header>
 
-    <slideshow-controller slideCount="16"></slideshow-controller>
+    
 
     <ol id="slides" aria-label="スライド">
       
       <li id="01">
-        <img src="slides/01.png" alt="alt">
+        <a href="#01"><img src="slides/01.png" alt="ユーザー自身の道具になるためのインターフェイス"></a>
         
           <ul>
             
-            <li id="01:1"><span>僕がこの発表でしゃべるのは3回目なんですが、1回目と2回目はアクセシビリティの話をして、今日はUIデザインの話をするつもりです</span></li>
+            <li id="01:1"><span>ユーザー自身の道具とはどういうことなのかというと、大抵の道具というのはまずユーザー自身が主体的に利用できるようになっているべきだと思います</span></li>
             
-            <li id="01:2"><span>普段みなさんはこの場ではあまり仕事と具体的な関わりがある話をされてないと思うんですが、僕はあえて意識的にそういった話をしてます</span></li>
-            
-            <li id="01:3"><span>というのは、普段はそういった話をする機会があまりに少ないなと感じてるからです</span></li>
-            
-            <li id="01:4"><span>もちろん、一見関係のなさそうな話を聞いて違う視点からの気づきを得られることもあるはずですが</span></li>
-            
-            <li id="01:5"><span>それはそれとして、常々やってるデザインとか、開発とか、プロジェクト進行とか、まさに目の前の仕事に直結する内容の話をもっと共有していくべきだと思い悩んでもいます</span></li>
-            
-            <li id="01:6"><span>例えば、何かしらのプロジェクトの進行中には、そのメンバー同士でプロジェクトの方向性から仕様の細かい部分まで話す機会は頻繁にあると思います</span></li>
-            
-            <li id="01:7"><span>ですが、その場においての決定の背景にある根本的な思想とか文脈まで共有することはなかなかできません</span></li>
-            
-            <li id="01:8"><span>すると結果的にはお互いに、やり取りした内容の表面的な部分しか汲み取れなくて、</span></li>
-            
-            <li id="01:9"><span>成果物の全体的な統一性がなくなったり、提案の意味が理解されずに通らなかったりするというようなことは経験があるはずです</span></li>
-            
-            <li id="01:10"><span>これは僕の経験をベースにした話なんですが、たぶん僕だけが感じてることではなくて</span></li>
-            
-            <li id="01:11"><span>ある人にとっては当たり前の知識を、自分も同じように知っているだけで、これまでうまくいかなかったことが簡単にできるようになったり</span></li>
-            
-            <li id="01:12"><span>自分の失敗を共有することで別の人はそれを繰り返さなくても済むようになるかもしれません</span></li>
-            
-            <li id="01:13"><span>知識を共有するだけですべてがうまくはいきませんが、何はともあれまずやってみないとダメだなというところで</span></li>
-            
-            <li id="01:14"><span>毎回こういった発表をさせていただいてますという話でした</span></li>
-            
-            <li id="01:15"><span>できれば、ここで聞いた話をこの場限りで終わらせずに、普段の仕事の中でも意識していただければと思います</span></li>
-            
-            <li id="01:16"><span>---</span></li>
-            
-            <li id="01:17"><span>さて、ということで今回は「ユーザー自身の道具になるためのインターフェイス」というテーマで話します</span></li>
-            
-            <li id="01:18"><span>ユーザー自身の道具とはどういうことなのかというと、大抵の道具というのはまずユーザー自身が主体的に利用できるようになっているべきだと思います</span></li>
-            
-            <li id="01:19"><span>対して現状としては、提供側がユーザーの行動を主導するという意識が強く出てしまっているデザインが世の中の至るところに蔓延しているように感じます</span></li>
+            <li id="01:2"><span>対して現状としては、提供側がユーザーの行動を主導するという意識が強く出てしまっているデザインが世の中の至るところに蔓延しているように感じます</span></li>
             
           </ul>
         
       </li>
       
       <li id="02">
-        <img src="slides/02.png" alt="alt">
+        <a href="#02"><img src="slides/02.png" alt="会社にあるどこにでもありそうな見た目の電子レンジ"></a>
         
           <ul>
             
@@ -80,7 +47,7 @@
       </li>
       
       <li id="03">
-        <img src="slides/03.png" alt="alt">
+        <a href="#03"><img src="slides/03.png" alt="電子レンジの操作パネルには、最上部に簡易的な液晶ディスプレイがあり、その下にたくさんのボタンが並んでいる"></a>
         
           <ul>
             
@@ -107,7 +74,7 @@
       </li>
       
       <li id="04">
-        <img src="slides/04.png" alt="alt">
+        <a href="#04"><img src="slides/04.png" alt="上の方にある「あたため」「解凍、解凍あたため」「牛乳」「おにぎり」というような6つあるボタンで温め方法を最初に選択し、次に「1分/100g」「10秒/10g」というボタンで時間を指定した上で、最後に「スタート」ボタンを押す"></a>
         
           <ul>
             
@@ -120,7 +87,7 @@
       </li>
       
       <li id="05">
-        <img src="slides/05.png" alt="alt">
+        <a href="#05"><img src="slides/05.png" alt="ウィザードが2画面あり、最初の画面では温め方法だけを選択し、次の画面で時間を指定後にスタートボタンを押す"></a>
         
           <ul>
             
@@ -143,7 +110,7 @@
       </li>
       
       <li id="06">
-        <img src="slides/06.png" alt="alt">
+        <a href="#06"><img src="slides/06.png" alt="これまたどこにでもありそうな電子レンジだが、操作部分にはぜんまいネジがふたつ付いているだけ"></a>
         
           <ul>
             
@@ -168,7 +135,7 @@
       </li>
       
       <li id="07">
-        <img src="slides/07.png" alt="alt">
+        <a href="#07"><img src="slides/07.png" alt="Mode"></a>
         
           <ul>
             
@@ -189,7 +156,7 @@
       </li>
       
       <li id="08">
-        <img src="slides/08.png" alt="alt">
+        <a href="#08"><img src="slides/08.png" alt="最初の電子レンジには「温め方法」「時間」「実行」という3つのステップがある"></a>
         
           <ul>
             
@@ -214,7 +181,7 @@
       </li>
       
       <li id="09">
-        <img src="slides/09.png" alt="alt">
+        <a href="#09"><img src="slides/09.png" alt="Modal / Modeless"></a>
         
           <ul>
             
@@ -229,7 +196,7 @@
       </li>
       
       <li id="10">
-        <img src="slides/10.png" alt="alt">
+        <a href="#10"><img src="slides/10.png" alt="モードレスな電子レンジにはたったふたつのぜんまいネジしか付いていない"></a>
         
           <ul>
             
@@ -260,7 +227,7 @@
       </li>
       
       <li id="11">
-        <img src="slides/11.png" alt="alt">
+        <a href="#11"><img src="slides/11.png" alt="Windowsでは画像の選択後に確定ボタンを押すまで保存されないが、Macでは画像を選択した時点で実際の壁紙として反映されている"></a>
         
           <ul>
             
@@ -277,7 +244,7 @@
       </li>
       
       <li id="12">
-        <img src="slides/12.png" alt="alt">
+        <a href="#12"><img src="slides/12.png" alt="Flow"></a>
         
           <ul>
             
@@ -298,7 +265,7 @@
       </li>
       
       <li id="13">
-        <img src="slides/13.png" alt="alt">
+        <a href="#13"><img src="slides/13.png" alt="透明"></a>
         
           <ul>
             
@@ -319,7 +286,7 @@
       </li>
       
       <li id="14">
-        <img src="slides/14.png" alt="alt">
+        <a href="#14"><img src="slides/14.png" alt="没入"></a>
         
           <ul>
             
@@ -334,7 +301,7 @@
       </li>
       
       <li id="15">
-        <img src="slides/15.png" alt="alt">
+        <a href="#15"><img src="slides/15.png" alt="タスクベースの設計ではユーザーがやることを伝えるまで目当てのコンテンツを見ることができない"></a>
         
           <ul>
             
@@ -353,7 +320,7 @@
       </li>
       
       <li id="16">
-        <img src="slides/16.png" alt="alt">
+        <a href="#16"><img src="slides/16.png" alt="参考"></a>
         
           <ul>
             
@@ -373,6 +340,6 @@
       
     </ol>
 
-    <p id="finished" hidden>スライドの終端</p>
+    
   </body>
 </html>

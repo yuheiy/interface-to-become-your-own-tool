@@ -35,12 +35,16 @@ h1 {
   line-height: 1.25;
 }
 
-h1 + p {
+h1 ~ p {
   grid-column: container;
   margin-top: 1.25rem;
   margin-bottom: 0;
   line-height: 1.5;
   opacity: 0.8;
+}
+
+h1 + p + p {
+  text-align: right;
 }
 
 cite {
@@ -97,8 +101,11 @@ slideshow-controller {
   opacity: 0.8;
 }
 
-#slides > li > img {
+#slides > li > a {
   grid-column: container;
+}
+
+#slides > li > a > img {
   display: block;
   width: 100%;
   box-shadow: 0 0 0 1px hsl(0, 0%, 96%);
